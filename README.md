@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## 2. Installation 
 
-Simply type make. You can edit the Makefile and compile with the following options:
+Create a bin directory with `mkdir bin` and then `make`. You can edit the Makefile and compile with the following options:
 
 - `-DDEBUG` to add debug messages concerning the sending and the receiving 
    of TUN/TAP packets;
