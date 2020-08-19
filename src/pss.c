@@ -1,10 +1,10 @@
 /* 	Implementation within TUN/TAP of the Priority Switching Scheduler (PSS),
-    see for details: http://oatao.univ-toulouse.fr/18448/
-		If you use this code please cite the above paper.
+    	see for details: http://oatao.univ-toulouse.fr/18448/
+	If you use this code please cite the above paper.
     
-		Copyright (C) 2018  
-			Victor Perrier <victor.perrier@student.isae-supaero.fr> 
-			Emmanuel Lochin <emmanuel.lochin@isae-supaero.fr>
+	Copyright (C) 2018  
+	Victor Perrier <victor.perrier@student.isae-supaero.fr> 
+	Emmanuel Lochin <emmanuel.lochin@isae-supaero.fr>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
