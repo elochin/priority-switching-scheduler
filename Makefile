@@ -3,6 +3,8 @@ CFLAGS=-Wall -DDSCP -Wextra -O3 -lm
 LDFLAGS=-Wall -DDSCP -Wextra -O3 -lm
 EXEC=pss
 
+all: bin pss
+
 pss: pscheduler.o queue.o bls.o pss.o
 	$(CC) -o bin/$@ $(patsubst %,./bin/%,$(^)) $(LDFLAGS)
 
@@ -22,6 +24,9 @@ pss.o: include/pscheduler.h include/queue.h include/bls.h
 
 clean:
 	rm -rf bin/*.o
+
+bin:
+	mkdir -p bin
 
 mrproper: clean
 	rm -rf bin/$(EXEC)

@@ -51,10 +51,16 @@ int tun_alloc(char *dev, int flags)
 
 	ifr.ifr_flags = flags;
 
+#if (__GNUC__ > 8)
+# pragma GCC diagnostic push
+# pragma GCC diagnostic ignored "-Wstringop-truncation"
+#endif
 	if (*dev) {
 		strncpy(ifr.ifr_name, dev, IFNAMSIZ);
 	}
-
+#if (__GNUC__ > 8)
+# pragma GCC diagnostic pop
+#endif
 	if ((err = ioctl(fd, TUNSETIFF, (void *)&ifr)) < 0) {
 		perror("ioctl(TUNSETIFF)");
 		close(fd);
