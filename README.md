@@ -57,13 +57,13 @@ As soon as compiled, launch `bin/pss -h` for usage (see below):
 
 You first need to create a `tun0` interface on the client:
 ```
-sudo openvpn --mktun --dev tun0
+sudo ip tuntap add mode tun dev tun0
 sudo ip link set tun0 up
 sudo ip addr add 192.168.10.1/24 dev tun0
 ```
 Then same operation on the serveur side with a different IP adress for the tunnel interface:
 ```
-sudo openvpn --mktun --dev tun0
+sudo ip tuntap add mode tun dev tun0
 sudo ip link set tun0 up
 sudo ip addr add 192.168.10.2/24 dev tun0
 ```
