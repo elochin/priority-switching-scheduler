@@ -1,6 +1,6 @@
 # Implementation within TUN/TAP of the Priority Switching Scheduler (PSS)
 
-Following A. Finzi, E. Lochin, A. Mifdaoui, F. Frances, Improving RFC5865 Core Network Scheduling with a Burst Limiting Shaper. IEEE Global Communications Conference (GLOBECOM), 4 December 2017 - 8 December 2017 (Singapore). Available <http://oatao.univ-toulouse.fr/18448/>, if you use this code please cite this paper.
+Following A. Finzi, E. Lochin, A. Mifdaoui, F. Frances, Improving RFC5865 Core Network Scheduling with a Burst Limiting Shaper. IEEE Global Communications Conference (GLOBECOM), 4 December 2017 - 8 December 2017 (Singapore). Available <https://hal.science/hal-04173550v1>, if you use this code please cite this paper.
 
 ## 1. Copyright Information
 
